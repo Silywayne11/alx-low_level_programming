@@ -2,24 +2,34 @@
 
 /**
  * puts_half - A function that prints half of a string
- * @str:The string to print
- * Return: void
+ * @str: The string to print
+ * Return: void 
  */
+
 void puts_half(char *str)
+
 {
-	int i, len, m;
-	for (len = 0; str[len] != '\0'; len++)
+
+	int j = 0;
+	int k;
+
+	while (str[j] != '\0')
 	{
+	j++;
+	}
+	if (j % 2 == 1)
+	{ 
+	k = (j - 1) / 2;
+	k += 1;
+	}
+	else
+	{
+	k = j / 2;
 	}
 
-	if ((len  % 2) == 0)
-		m = (len / 2);
-	else
-		m = (len + 1) / 2;
-
-	for (i = m; i < len; i++)
+	for (; k < j; k++)
 	{
-		_putchar(str[i]);
+	_putchar(str[k]);
 	}
 	_putchar('\n');
 }
