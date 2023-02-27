@@ -2,13 +2,12 @@
 
 /**
  * puts_half - A function that prints half of a string
- * @str: The string to print 
+ * @str:The string to print
  * Return: void
  */
 void puts_half(char *str)
 {
 	int i, len, m;
-
 	for (len = 0; str[len] != '\0'; len++)
 	{
 	}
