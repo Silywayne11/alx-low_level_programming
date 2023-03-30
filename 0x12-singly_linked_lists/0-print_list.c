@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
- * print_list - Prints all the elements of a linked list
+ * print_list - Prints all the elements of a list_t list
  * @h: Pointer to the list_t list to print
- *
  * Return: The number of nodes printed
  */
 
@@ -24,5 +24,4 @@ s++;
 }
 
 return (s);
-
 }
