@@ -6,14 +6,20 @@
   * @h: singly linked list to print
   * Return: number of nodes in the list
   */
+
 size_t print_list(const list_t *h)
 {
-	size_t i;
+size_t cont = 0;
 
-	for (i = 0; h; i++)
-	{
-		printf("[%d] %s\n", h->len, h->str);
-		h = h->next;
-	}
-	return (i);
+while (h)
+{
+if (h->str)
+printf("[%u] %s\n", h->len, h->str);
+else
+printf("[0] (nil)\n");
+cont++;
+h = h->next;
+}
+
+return (cont);
 }
