@@ -4,22 +4,23 @@
 /**
   * print_list - prints all elements of a list_t list
   * @h: singly linked list to print
-  * Return: number of nodes in the list
+  * Return: number of elements in the list
   */
 
 size_t print_list(const list_t *h)
 {
-size_t cont = 0;
+size_t nelem;
 
-while (h)
+nelem = 0;
+while (h != NULL)
 {
-if (h->str)
-printf("[%u] %s\n", h->len, h->str);
+if (h->str == NULL)
+printf("[%u] %s\n", 0, "(nil)");
 else
-printf("[0] (nil)\n");
-cont++;
+printf("[%u] %s\n", h->len, h->str);
 h = h->next;
+nelem++;
 }
 
-return (cont);
+return (nelem);
 }
