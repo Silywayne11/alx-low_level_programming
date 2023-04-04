@@ -5,6 +5,7 @@
  * print_listint - A function that prints all the elements of
  *                 a listint_t list.
  * @h: pointer to the head of the list_t list.
+ *
  * Return: Number of nodes in the list_t list.
  */
 
