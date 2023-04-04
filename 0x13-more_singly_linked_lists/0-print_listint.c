@@ -1,5 +1,9 @@
 #include "lists.h"
-#include <stdio.h>
+#include<stddef.h>
+#include<stdarg.h>
+#include<string.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 /**
  * print_listint - A function that prints all the elements of
@@ -8,7 +12,6 @@
  *
  * Return: Number of nodes in the list_t list.
  */
-
 size_t print_listint(const listint_t *h)
 {
 	size_t nodes = 0;
